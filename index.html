@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Document</title>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="flex-container">
+            <div id="text">
+                <h1 id="title">Etch-a-Sketch</h1>
+            </div>
+
+            <div id="board">
+
+            </div>
+
+            <div id="controls">
+                <div id="brushes">
+                    <button class="button" id="black">Black</button>
+                    <button class="button" id="rainbow">Rainbow</button>
+                    <button class="button" id="eraser">Eraser</button>
+                    <div id="custom-wrapper">
+                        <input type="color" class="button" id="custom" autocomplete="off" >         
+                    </div>
+                </div>
+                <div id="other-controls">
+                    <div id="size-controls">
+                        <label for="size">Change size</label>
+                        <div>0<input type="range" id="size" min="1" max="100" value="16" autocomplete="off">100</div>
+                        <p id="current-size">Current size: 16</p>
+                    </div>
+                    <div>
+                        <button class="button" id="reset-size">Reset size</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
