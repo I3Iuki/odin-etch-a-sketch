@@ -66,7 +66,6 @@ black.addEventListener("click", () => {
 
 rainbow.addEventListener("click", () => {
     currentColor = "random";
-    custom.style.backgroundColor = "red"
     customWrapper.classList.add("rainbow-custom")
 });
 
@@ -81,7 +80,7 @@ custom.addEventListener("change", () => {
     customWrapper.classList.remove("rainbow-custom");
 });
 
-size.addEventListener("input", (e) => {
+sizeSlider.addEventListener("input", (e) => {
     populateGrid(sizeSlider.value);
     currentSize.textContent = `Current size: ${size.value}`
 });
@@ -89,5 +88,6 @@ size.addEventListener("input", (e) => {
 resetSize.addEventListener("click", (e) => {
     sizeSlider.value = 16;
     populateGrid(sizeSlider.value);
+    currentSize.textContent = `Current size: ${size.value}`
 }); 
 
